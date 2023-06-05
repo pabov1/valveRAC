@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*---------------HEADER-------------*/
+.header{
+    width: 100%;
+    min-height: 20vh;
+    background: linear-gradient(to right,#ffaab3,#ff9095);
+}
+
+nav{
+    display: flex;
+    padding: 0% 4%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 150px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+/*----------------------CONTENT--------------------*/
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-right: 0%;
+    padding-left: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.return{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.row-1-v{
+    font-size: 25px;
+}
+
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 100px;
+}
+
+.col-1 h2{
+    font-size: 54px;
+}
+
+.col-graph{
+    width:100%;
+    min-width:900px;
+    height:500px;
+    align-items: center;
+    position: relative;
+    margin-left: 100px;
+}
+
+/*-------------------TABLE-FILTER-------------*/
+
+.fil-tab{
+    width: 90%;
+    background-color: #e9e7eb;
+    align-items: center;
+    margin-left: 80px;
+}
+
+.fil-tab a{
+    text-decoration: none;
+    color: mediumblue;
+    font-size: 14px;
+}
+.fil-tab a:hover{
+    text-decoration: underline;
+}
+
+.fil-tab p{
+    text-align: center;
+    display: none;
+    font-size: 1.2rem;
+}
+
+.table-row-1{
+    background-color: #ff9095;
+    color: white;
+}
+
+.form-control{
+}
+
+
+/*-------------------DEVICES-------------------*/
+
+@media(max-width: 700px) {
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: darksalmon;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+/*-------------footer---------------*/
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4{
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer p{
+    font-weight: 200;
+    font-size: 12px;
+}
